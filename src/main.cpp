@@ -40,10 +40,18 @@ int main(){
         // handles input
         int ch = getch();
         if (ch == 'q') break;
-        else if (ch == KEY_LEFT && x > 1) x--;
-        else if (ch == KEY_RIGHT && x < 18) x++;
-        else if (ch == KEY_UP && y > 1) y--;
-        else if (ch == KEY_DOWN && y < 18) y++;
+        else if (ch == KEY_LEFT && x > 1){
+            x--;
+        }
+        else if (ch == KEY_RIGHT && x < 18){
+            x++;
+        }
+        else if (ch == KEY_UP && y > 1){
+            y--;
+        } 
+        else if (ch == KEY_DOWN && y < 18){
+            y++;
+        }
     }
 
     endwin(); // ends ncurses
