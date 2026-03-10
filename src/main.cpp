@@ -39,7 +39,9 @@ int main(){
 
         // handles input
         int ch = getch();
-        if (ch == 'q') break;
+        if (ch == 'q'){
+            break;
+        }
         else if (ch == KEY_LEFT && x > 1){
             x--;
         }
